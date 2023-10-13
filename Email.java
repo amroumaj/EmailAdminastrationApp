@@ -42,6 +42,35 @@ public class Email {
      return new String(password);
    }
 
+   //set the mailBoxCapacity
+   public void setMailBoxCapacity(int capacity){
+     this.mailBoxCapacity = capacity;
+   }
+
+   //set an alternate email
+   public void setAlternateEmail(String email){
+     this.alternateEmail = email;
+   }
+
+   //change the password
+   public void setPassword(String password){
+     this.password = password;
+   }  
+
+   //set the suffix for the company
+   public void setCompanySuffix(String suffix){
+     this.companySuffix = suffix;
+   }
+
+   //set the length of the password
+   public void setPasswordLength(int passwordLength){
+     this.passwordLength = passwordLength;
+   }
+
+
+   public String getPassword(){return password;}
+   public String getAlternateEmail(){return alternateEmail;}
+
    //Ask for the department
 
    private String setDepartment(){
